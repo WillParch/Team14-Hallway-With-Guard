@@ -3,7 +3,12 @@ guid: d126344412dd4fc48a2cd58638952ff2
 ModelImporter:
   serializedVersion: 21300
   internalIDToNameTable: []
-  externalObjects: {}
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: pDisc2Mat
+    second: {fileID: 2100000, guid: 5106d10470d094f47b63db16e954a3ba, type: 2}
   materials:
     materialImportMode: 2
     materialName: 0

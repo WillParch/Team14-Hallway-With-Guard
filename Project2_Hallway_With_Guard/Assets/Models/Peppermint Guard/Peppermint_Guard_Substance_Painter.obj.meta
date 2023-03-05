@@ -3,7 +3,27 @@ guid: ba2845a06719ade4890051b48ca6a43d
 ModelImporter:
   serializedVersion: 21300
   internalIDToNameTable: []
-  externalObjects: {}
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: pCylinder1Mat
+    second: {fileID: 2100000, guid: bb73b477009682e469c1d27d271042cd, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: pasted__pSphere1Mat
+    second: {fileID: 2100000, guid: bb73b477009682e469c1d27d271042cd, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: pasted__pTorus1Mat
+    second: {fileID: 2100000, guid: bb73b477009682e469c1d27d271042cd, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: pasted__pasted__pSphere1Mat
+    second: {fileID: 2100000, guid: bb73b477009682e469c1d27d271042cd, type: 2}
   materials:
     materialImportMode: 2
     materialName: 0
