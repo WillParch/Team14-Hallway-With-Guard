@@ -10,6 +10,8 @@ TagManager:
   - Barrier2
   - Room Light
   - Barrier3
+  - Win Object
+  - Win
   layers:
   - Default
   - TransparentFX
