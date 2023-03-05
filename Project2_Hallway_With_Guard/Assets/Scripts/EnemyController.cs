@@ -7,6 +7,7 @@ public class EnemyController : MonoBehaviour
     public int damage;
     public PlayerHealth playerHealth;
     public GameObject roof;
+    public GameObject roof2;
     public GameObject fire;
     public GameObject roomLight;
     public float interval = 1f;
@@ -20,6 +21,7 @@ public class EnemyController : MonoBehaviour
         if(collision.gameObject.tag == "Barrier")
         {
             Destroy(roof);
+            Destroy(roof2);
         }
 
         if(collision.gameObject.tag == "Barrier2")

@@ -210,6 +210,7 @@ public class AIController : MonoBehaviour
                      *  If the player is behind a obstacle the player position will not be registered
                      * */
                     m_playerInRange = false;
+                    m_IsPatrol = true;
                 }
             }
             if (Vector3.Distance(transform.position, player.position) > viewRadius)
@@ -219,6 +220,7 @@ public class AIController : MonoBehaviour
                  *  Or the enemy is a safe zone, the enemy will no chase
                  * */
                 m_playerInRange = false;                //  Change the sate of chasing
+                
             }
             if (m_playerInRange)
             {
@@ -226,6 +228,10 @@ public class AIController : MonoBehaviour
                  *  If the enemy no longer sees the player, then the enemy will go to the last position that has been registered
                  * */
                 m_PlayerPosition = player.transform.position;       //  Save the player's current position if the player is in range of vision
+            }
+            if (!m_playerInRange)
+            {
+                m_IsPatrol = true;
             }
         }
     }
