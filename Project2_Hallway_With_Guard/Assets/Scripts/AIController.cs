@@ -229,10 +229,7 @@ public class AIController : MonoBehaviour
                  * */
                 m_PlayerPosition = player.transform.position;       //  Save the player's current position if the player is in range of vision
             }
-            if (!m_playerInRange)
-            {
-                m_IsPatrol = true;
-            }
+            
         }
     }
 }

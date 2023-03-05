@@ -10,6 +10,7 @@ public class EnemyController : MonoBehaviour
     public GameObject roof2;
     public GameObject fire;
     public GameObject roomLight;
+    public GameObject roomLight2;
     public float interval = 1f;
     private void OnCollisionEnter(Collision collision)
     {
@@ -32,6 +33,7 @@ public class EnemyController : MonoBehaviour
         if(collision.gameObject.tag == "Barrier3")
         {
             Destroy(roomLight);
+            Destroy(roomLight2);
         }
     }
 
