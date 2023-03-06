@@ -5,20 +5,20 @@ using UnityEngine.UI;
 public class HealthBar : MonoBehaviour
 {
     public static HealthBar instance { get; private set; }
-    public Image hpBar;
-    float MaxHP;
-
+    public Image mask;
+    float originalSize;
+    // Start is called before the first frame update
     void Awake()
     {
         instance = this;
     }
     void Start()
     {
-       MaxHP = hpBar.rectTransform.rect.width;
+       originalSize = mask.rectTransform.rect.width;
     }
     
     public void SetValue(float value)
     {
-        hpBar.rectTransform.SetSizeWithCurrentAnchors(RectTransform.Axis.Horizontal, MaxHP * value);
+        mask.rectTransform.SetSizeWithCurrentAnchors(RectTransform.Axis.Horizontal, originalSize * value);
     }
 }
