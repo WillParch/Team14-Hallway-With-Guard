@@ -13,17 +13,20 @@ public class EnemyController : MonoBehaviour
     public GameObject roomLight;
     public GameObject roomLight2;
     public float interval = 1f;
+    
 
     private void Start()
     {
         eye1.gameObject.SetActive(false);
         eye2.gameObject.SetActive(false);
+        
     }
     private void OnCollisionEnter(Collision collision)
     {
         if(collision.gameObject.tag == "Player")
         {
             playerHealth.TakeDamage(damage);
+            
         }
 
         if(collision.gameObject.tag == "Barrier")

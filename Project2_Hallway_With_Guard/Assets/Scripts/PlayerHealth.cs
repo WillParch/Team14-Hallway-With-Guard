@@ -12,12 +12,14 @@ public class PlayerHealth : MonoBehaviour
     private float _gravity = -10f;
     [SerializeField] private float gravityMultiplier = 3.0f;
     private float _velocity;
+    AudioSource audioSource;
+    public AudioClip hit;
     
     // Start is called before the first frame update
     void Start()
     {
         health = maxHealth;
-        
+        audioSource = GetComponent<AudioSource>();
         
         
     }
@@ -42,7 +44,8 @@ public class PlayerHealth : MonoBehaviour
     public void TakeDamage(int damage)
     {
         health -= damage;
-       
+       audioSource.clip = hit;
+            audioSource.Play();
         
         if(health <= 0)
         {
