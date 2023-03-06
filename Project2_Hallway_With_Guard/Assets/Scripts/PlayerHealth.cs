@@ -49,6 +49,7 @@ public class PlayerHealth : MonoBehaviour
             Destroy(gameObject);
             SceneManager.LoadScene("LoseGame");
         }
+        HealthBar.instance.SetValue(health / (float)maxHealth);
     }
    
     
