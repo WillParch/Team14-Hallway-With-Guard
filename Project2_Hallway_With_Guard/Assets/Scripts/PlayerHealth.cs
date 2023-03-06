@@ -9,7 +9,7 @@ public class PlayerHealth : MonoBehaviour
     public int health;
     public CharacterController controller;
     public float speed = 12f;
-    private float _gravity = -9.81f;
+    private float _gravity = -10f;
     [SerializeField] private float gravityMultiplier = 3.0f;
     private float _velocity;
     
